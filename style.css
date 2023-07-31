@@ -3,6 +3,37 @@ body {
     box-sizing: border-box;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: black solid 1px;
+    width: 100%;
+    height: 80px;
+}
+
+.brand-name {
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+nav ul,
+nav a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    margin-right: 15px;
+}
+
+li {
+    margin-right: 5px;
+    padding: 5px;
+    border: black solid 1px;
+}
+
 @media (max-width: 576px) {
     /* css rules for sm screens */
 }
