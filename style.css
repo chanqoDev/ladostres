@@ -1,14 +1,41 @@
+:root {
+    --global-color-primary: #0C5992;
+    --global-color-secondary: #54595F;
+    --global-color-text: #7A7A7A;
+    --global-color-accent: #1E8717;
+    --global-color-Cheese: #DFA436;
+    --global-color-hotPink: #FF66C4;
+    --global-color-spongeBob: #FCC900;
+    --global-color-aqua: #00D296;
+    --global-color-redish: #FF4801;
+    --global-color-white: #FFFFFF;
+    --global-color-redEye: #AF1005;
+    --global-color-black: #000000;
+    /* font-family: 'Poppins', sans-serif; Noto Sans, Roboto Slab,*/
+    --global-typography-primary-font-size: 24px;
+    ---global-typography-primary-font-weight: 600;
+    --global-typography-secondary-font-family: "Roboto Slab";
+    --global-typography-font-family: "Londrina Solid";
+}
+
 body {
     margin: 0;
     box-sizing: border-box;
+    font-family: var(--global-typography-font-family);
+    background-color: var(--global-color-spongeBob);
+}
+
+header {
+    width: 100%;
 }
 
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: black solid 1px;
+    border: var(--global-color-black) solid 1px;
     width: 100%;
+    min-width: 100%;
     height: 80px;
 }
 
@@ -17,25 +44,47 @@ nav {
     margin-left: 15px;
 }
 
+.brand-logo {
+    display: flex;
+    justify-content: center;
+}
+
 nav ul,
 nav a {
     list-style-type: none;
     text-decoration: none;
+    color: var(--global-color-primary);
+
 }
 
 nav ul {
     display: flex;
-    margin-right: 15px;
+    margin-right: 20px;
+
 }
 
 li {
-    margin-right: 5px;
-    padding: 5px;
-    border: black solid 1px;
+    margin-right: 8px;
+    padding: 8px;
+    width: auto;
+    /* border: var(--global-color-black) solid 1px; */
+    font-family: var(--global-typography-font-family);
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-style: normal;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--global-color-white);
 }
 
 @media (max-width: 576px) {
+
     /* css rules for sm screens */
+
+
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
