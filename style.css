@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 576px) {
+    /* css rules for sm screens */
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    /* css rules for md screens */
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    /* css rules for lg screens */
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    /* css rules for xtra-lg screens*/
+}
+
+@media (min-width: 1201px) {
+    /* css xxlg screens */
+}
