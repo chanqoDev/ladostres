@@ -53,8 +53,8 @@ nav ul,
 nav a {
     list-style-type: none;
     text-decoration: none;
-    color: var(--global-color-primary);
-
+    color: var(--global-color-black);
+    text-shadow: 2px 2px 4px rgba(0, 0.5, 0, 0.5);
 }
 
 nav ul {
@@ -78,7 +78,18 @@ li {
 
 a:hover {
     color: var(--global-color-white);
+    text-shadow: 2px 2px 4px rgba(0, 0.5, 0, 0.5);
 }
+
+/* a:visited {
+    color: var(--global-color-primary);
+} */
+
+ul li a {
+    color: var(--global-color-black);
+    text-shadow: 2px 2px 4px rgba(0, 0.0, 0, 0.5);
+}
+
 
 @media (max-width: 576px) {
 
