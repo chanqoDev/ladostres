@@ -18,6 +18,11 @@
     --global-typography-font-family: "Londrina Solid";
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin: 0;
     box-sizing: border-box;
@@ -26,17 +31,17 @@ body {
 }
 
 header {
-    width: 100%;
+    border: var(--global-color-black) solid 1px;
 }
 
+header,
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: var(--global-color-black) solid 1px;
-    width: 100%;
+    width: auto;
     min-width: 100%;
-    height: 80px;
+    height: 90px;
 }
 
 .brand-name {
@@ -94,16 +99,135 @@ ul li a {
 @media (max-width: 576px) {
 
     /* css rules for sm screens */
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
 
+
+    header {
+        display: block;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        height: 100px;
+    }
+
+    nav {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    img.brand-name {
+        width: 100%;
+    }
+
+    .brand-name {
+        display: flex;
+        align-items: center;
+        display: flex;
+        margin-left: 100px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    li {
+        margin-left: 20px;
+    }
 
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
+
     /* css rules for md screens */
+    header {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        height: 100px;
+    }
+
+    nav {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    ul {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    img.brand-name {
+        width: 100%;
+        display: inline;
+        margin: 0;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .brand-logo {
+        padding-top: 10px;
+        max-width: 100%;
+        display: inline;
+        height: auto;
+        margin: 0;
+        margin-left: 25%;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
+
     /* css rules for lg screens */
+    header {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        height: 100px;
+    }
+
+    nav {
+        display: flex;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    ul {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    img.brand-name {
+        width: 100%;
+    }
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
