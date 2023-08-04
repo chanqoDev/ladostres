@@ -13,7 +13,7 @@
     --global-color-black: #000000;
     /* font-family: 'Poppins', sans-serif; Noto Sans, Roboto Slab,*/
     --global-typography-primary-font-size: 24px;
-    ---global-typography-primary-font-weight: 600;
+    --global-typography-primary-font-weight: 600;
     --global-typography-secondary-font-family: "Roboto Slab";
     --global-typography-font-family: "Londrina Solid";
 }
@@ -95,12 +95,43 @@ ul li a {
     text-shadow: 2px 2px 4px rgba(0, 0.0, 0, 0.5);
 }
 
-.banner-image {
+/* .banner-image {
     width: 100%;
     max-width: 100%;
     height: 93vh;
     background-image: contain;
+} */
+
+section.hero-banner-container {
+    background: hsla(195, 99%, 45%, 1);
+
+    background: linear-gradient(45deg, hsla(195, 99%, 45%, 1) 0%, hsla(208, 90%, 28%, 1) 80%);
+
+    background: -moz-linear-gradient(45deg, hsla(195, 99%, 45%, 1) 0%, hsla(208, 90%, 28%, 1) 80%);
+
+    background: -webkit-linear-gradient(45deg, hsla(195, 99%, 45%, 1) 0%, hsla(208, 90%, 28%, 1) 80%);
+
+    width: 100%;
+
+    max-width: 100%;
+
+    height: 93vh;
 }
+
+
+.text-banner {
+    font-size: 100px;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Shrikhand', 'cursive';
+    background: hsla(50, 79%, 70%, 1);
+    background: radial-gradient(circle, hsla(50, 79%, 70%, 1) 0%, hsla(51, 64%, 57%, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* Standard property for compatibility */
+    -webkit-text-fill-color: transparent;
+}
+
 
 @media (max-width: 576px) {
 
@@ -131,9 +162,9 @@ ul li a {
         align-content: center;
     }
 
-    img.brand-name {
+    /* img.brand-name {
         width: 100%;
-    }
+    } */
 
     .brand-name {
         display: flex;
@@ -202,7 +233,7 @@ ul li a {
 
 
 
-    .banner-image {
+    /* .banner-image {
         width: 100%;
         max-width: 100%;
         height: 95vh;
@@ -210,7 +241,7 @@ ul li a {
         justify-content: center;
         margin: 0;
         padding: 0;
-    }
+    } */
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
