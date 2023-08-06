@@ -108,6 +108,7 @@ ul li a {
     background-image: contain;
     align-items: flex-end;
     float: right;
+    z-index: 999;
 }
 
 section.hero-banner-container {
@@ -140,6 +141,13 @@ section.hero-banner-container {
     -webkit-text-fill-color: transparent;
 }
 
+.subtext-banner {
+    font-size: 48px;
+    color: var(--global-color-white);
+    text-align: left;
+    display: inline;
+    padding: 40px;
+}
 
 @media (max-width: 576px) {
 
