@@ -149,6 +149,11 @@ section.hero-banner-container {
     padding: 40px;
 }
 
+.main-section-image {
+    width: 100%;
+    height: auto;
+}
+
 @media (max-width: 576px) {
 
     /* css rules for sm screens */
